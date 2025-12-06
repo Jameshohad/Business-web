@@ -1,0 +1,54 @@
+.nav {
+  background: #F7B733;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  padding: 12px 24px;
+}
+
+.logo-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+   transition: transform 0.25s ease; /* 动画时长 */
+  cursor: pointer;
+}
+.logo-img:hover {
+  transform: scale(1.3);
+}
+
+/* Right nav menu */
+
+.menu {
+  display: flex;
+  gap: 12px;
+}
+
+/* Buttons */
+
+.menu a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 70px;
+  height: 70px;
+
+  background: #E53935;
+  color: white;
+
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: 600;
+
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+
+  transition: 0.2s ease;
+}
+
+.menu a:hover {
+  background: #C62828;
+  transform: translateY(-3px);
+}
