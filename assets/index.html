@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Chinese - 轻松学中文</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <script src="language.js" defer></script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="nav">
+        <img class="logo-img" src="assets/logo.png" alt="Learn Chinese Logo" onclick="window.location.href='index.html'">
+        
+        <!-- 菜单部分 -->
+<div class="menu">
+    <a href="index.html" data-translate="nav.home">主页</a>
+    <a href="course.html" data-translate="nav.courses">课程</a>
+    <a href="quiz.html" data-translate="nav.quiz">测验</a>
+    <a href="about.html" data-translate="nav.about">关于</a>
+    <a href="signup.html" data-translate="nav.signup">注册</a>
+    <!-- 添加翻译按钮 -->
+    <a href="#" id="translate-btn" class="translate-btn">
+        <span class="translate-icon">🌐</span>
+        <span class="lang-text">English</span>
+    </a>
+</div>
+    </nav>
+
+    <!-- 主内容区 -->
+    <main>
+        <div class="home-container">
+            <!-- 横幅 -->
+            <div class="banner" data-translate="home.banner">
+                轻松学中文 — 专为所有对中文感兴趣的学习者设计。
+            </div>
+
+            <!-- 内容区域 -->
+            <div class="content">
+                <img src="assets/hero.jpg" alt="学习中文的图片">
+                
+                <div class="info">
+                    <div class="card" data-translate="home.card1">中文是世界上使用最广泛的语言之一。</div>
+                    <div class="card" data-translate="home.card2">学习中文可以帮助您更好地了解中国文化。</div>
+                    <div class="card" data-translate="home.card3">本课程专为所有对中文感兴趣的学习者设计。</div>
+                    
+                    <div class="feature-box">
+                        <h4 data-translate="home.features">平台特色</h4>
+                        <ul>
+                            <li data-translate="home.feature1">📊 学习进度跟踪</li>
+                            <li data-translate="home.feature2">🎧 AI发音练习</li>
+                            <li data-translate="home.feature3">📝 每周测验挑战</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
