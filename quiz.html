@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测验 - Learn Chinese</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <nav class="nav">
+        <img class="logo-img" src="assets/logo.png" alt="Learn Chinese Logo" onclick="window.location.href='index.html'">
+        
+        <div class="menu">
+            <a href="index.html">主页</a>
+            <a href="course.html">课程</a>
+            <a href="quiz.html">测验</a>
+            <a href="about.html">关于</a>
+            <a href="signup.html">注册</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="quiz">
+            <h2>中文水平测验</h2>
+            <p class="progress" id="progress">问题 1 / 5</p>
+
+            <div class="quiz-card">
+                <h3 id="question">问题将在这里显示</h3>
+                
+                <div class="options" id="options">
+                    <!-- 选项将通过JavaScript动态生成 -->
+                </div>
+
+                <div class="feedback" id="feedback"></div>
+
+                <button class="next-btn" id="next-btn" onclick="nextQuestion()" style="display: none;">
+                    下一题 →
+                </button>
+
+                <p class="score" id="score" style="display: none;"></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>
